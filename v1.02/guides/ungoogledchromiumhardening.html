@@ -1,0 +1,228 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="../pagestyle.css">
+<meta charset="UTF-8">
+<link rel="icon" href="../imgs/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75">
+<title>𝐇𝐨𝐰 𝐭𝐨 𝐈𝐧𝐬𝐭𝐚𝐥𝐥, 𝐂𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐞 & 𝐇𝐚𝐫𝐝𝐞𝐧 𝐔𝐧𝐠𝐨𝐨𝐠𝐥𝐞𝐝 𝐂𝐡𝐫𝐨𝐦𝐢𝐮𝐦 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲</title>
+</head>
+
+<body>
+
+<center>
+<h1>
+How to Install, Configure & Harden Ungoogled Chromium for Privacy
+</h1>
+</center>
+
+<p>
+Ungoogled Chromium is a fork of Chromium, the open-source browser, with the telemetry, spyware and Google services removed or redirected.
+</p>
+
+<h3>
+👍 Advantages
+</h3>
+<ul>
+<li>Provides a clean, unmodified browser state for user customisation and tweaking.</li>
+<li>No spyware or Google tie-ins. <a href="https://spyware.neocities.org/articles/ungoogled_chromium.html">Spyware Watchdog Report.</a></li>
+<li>Best performance out of all Chromium-based browsers on all operating systems (Windows, macOS, Linux).</li>
+</ul>
+
+<h3>
+👎 Disadvantages
+</h3>
+<ul>
+<li>Does not support auto-update of the browser or extensions.</li>
+<li>Requires additional preperation to install an extension.</li>
+<li>Does not support Widevine DRM, necessary to play certain protected media.</li>
+<li>Does not support spell check or webpage translation.</li>
+</ul>
+
+<br>
+<hr style="width:475px" color="FF00FF">
+<br>
+
+<h2>
+📥 Download & Installation
+</h2>
+<ol>
+<li>Visit <a href="https://chromium.woolyss.com">this</a> link and find the version with the purple "Ungoogled" tag for your operating system.</li>
+<li>For Windows, download the installer. For macOS/Linux, download the archive.</li>
+</ol>
+<h3>
+🗔 Installing on Windows
+</h3>
+<ol>
+<li>Run the installer and follow the wizard until the install completes.</li>
+</ol>
+<h3>
+🗔 Installing on macOS
+</h3>
+<ol>
+<li>Extract the contents of the archive.</li>
+<li>Copy the "Chromium.app" folder found in the extracted folder to the "Applications" folder in Finder.</li>
+</ol>
+
+<br>
+<hr style="width:475px" color="FF00FF">
+<br>
+
+<h2>
+⚙️ Basic Configuration & Flags
+</h2>
+<h3>
+🧰 Configuring the Settings
+</h3>
+<ol>
+<li>Open Chromium and click the 3 dots in the top right of the screen, then click "Settings".</li>
+<li>Under "You and Google", click "Sync and Google services" and ensure everything is disabled.</li>
+<li>Under the "Autofill" category, click and disable all options under "Passwords", "Payment methods" and "Addresses and more".</li>
+<li>Under the "Privacy and security" category, click "Cookies and other site data" and ensure "Block third-party cookies" is enabled.</li>
+<li>Under the "Privacy and security" category, click "Security" and ensure "Safe Browsing" is set to "No protection (not recommended)".</li>
+<li>Under the "Privacy and security" category, click "Site Settings" and under "Permissions" block everything apart from "Automatic downloads" and "File handlers".</li>
+<li>Under the "Search engine" category, click "Manage search engines" and under "Other search engines", click "Add" and fill out the textboxes with the information for the search engine you prefer below.</li>
+<li>Click the "Advanced" tab on the left of the screen.</li>
+<li>Ensure "Spell check" is disabled.</li>
+<li>Ensure "Continue running background apps when Chromium is closed" is disabled.</li>
+<li>In the address bar, type "<a href="chrome://extensions">chrome://extensions</a>".</li>
+<li>Ensure that "Developer mode" in the top right is enabled.</li>
+</ol>
+<h3>
+🔍 Search Engine Options
+</h3>
+<p>
+<strong>DuckDuckGo</strong>
+</p>
+<ul>
+<li><strong>Search engine:</strong> DuckDuckGo</li>
+<li><strong>Keyword:</strong> ddg</li>
+<li><strong>URL with %s in place of query:</strong> https://duckduckgo.com/?q=%s</li>
+</ul>
+<h3>
+🚩 Tweaking the Flags
+</h3>
+<ol>
+<li>In the address bar, type "<a href="chrome://flags">chrome://flags</a>".</li>
+<li>In the search box, enter "#extension-mime-request-handling" and change to "Always prompt for install" using the drop-down toggle.</li>
+<li>In the search box, enter "#disable-search-engine-collection" and change to "Enabled" using the drop-down toggle.</li>
+<li>In the search box, enter "#fingerprinting-client-rects-noise" and change to "Enabled" using the drop-down toggle.</li>
+<li>In the search box, enter "#fingerprinting-canvas-measuretext-noise" and change to "Enabled" using the drop-down toggle.</li>
+<li>In the search box, enter "#fingerprinting-canvas-image-data-noise" and change to "Enabled" using the drop-down toggle.</li>
+<li>In the search box, enter "#hardware-media-key-handling" and change to "Disabled" using the drop-down toggle.</li>
+<li>Restart the browser.</li>
+</ol>
+
+<br>
+<hr style="width:475px" color="FF00FF">
+<br>
+
+<h2>
+🧩 Extension Setup
+</h2>
+<h3>
+🛡️ uBlock Origin
+</h3>
+<ol>
+<li>Click <a href="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3Dcjpalhdlnbpafiamejdnhcphjbkeiagm%26installsource%3Dondemand%26uc">this</a> link to install.</li>
+<li>Restart the browser, click the puzzle piece in the top right and click "Manage extensions".</li>
+<li>Click "Details" underneath and ensure "Allow in Incognito" is enabled.</li>
+<li>Click "Extension options".</li>
+<li>In the "Settings" tab, ensure that only "Hide placeholders of blocked elements", "Show the number of blocked requests on the icon", "Disable tooltips" and "I am an advanced user (required reading)" are enabled.</li>
+<li>Under "Privacy" in the "Settings" tab, ensure that all options are enabled.</li>
+<li>Under "Default behaviour" in the "Settings" tab, ensure that "Block remote fonts" enabled.</li>
+<li>In the "Filter lists" tab, enable all "Built-in", "Ads", "Privacy", "Malware domains", "Annoyances" and "Multipurpose" lists are enabled. Also enable the "RU AdList" under "Regions, languages".</li>
+<li>Click "Apply changes" and "Update now" in the "Filter lists" tab.</li>
+<li>In the "My filters" tab, type "*$websocket" and click "Apply changes".</li>
+<li>Click "Commit" and restart the browser.</li>
+</ol>
+<h3>
+🌀 uMatrix
+</h3>
+<ol>
+<li>Click <a href="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3Dogfcmafjalglgifnmanfmnieipoejdcf%26installsource%3Dondeman%26uc">this</a> link to install.</li>
+<li>Restart the browser, click the puzzle piece in the top right and click "Manage extensions".</li>
+<li>Click "Details" underneath and ensure "Allow in Incognito" is enabled.</li>
+<li>Click "Extension options".</li>
+<li>In the "Settings" tab, under "Convenience" ensure that all options except "Enable cloud storage support" are enabled.</li>
+<li>In the "Settings" tab, under "Privacy" ensure that all options are enabled.</li>
+<li>Click the puzzle piece in the top right of the browser window and click "uMatrix".</li>
+<li>Click the asterisk icon on the top row (*).</li>
+<li>Click the "all" button so that the bar becomes dark red.</li>
+<li>Click the top half of the "CSS" and "image" buttons so that they become dark green.</li>
+<li>Restart the browser.</li>
+</ol>
+<h3>
+✅ LocalCDN
+</h3>
+<ol>
+<li>Click <a href="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3Dnjdfdhgcmkocbgbhcioffdbicglldapd%26installsource%3Dondemand%26uc">this</a> link to install.</li>
+<li>Restart the browser, click the puzzle piece in the top right and click "Manage extensions".</li>
+<li>Click "Details" underneath and ensure "Allow in Incognito" is enabled.</li>
+<li>Click "Extension options".</li>
+<li>Restart the browser.</li>
+</ol>
+<h3>
+🔷 HTTPS Everywhere
+</h3>
+<ol>
+<li>Click <a href="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3Dgcbommkclmclpchllfjekcdonpmejbdp%26installsource%3Dondeman%26uc">this</a> link to install.</li>
+<li>Restart the browser, click the puzzle piece in the top right and click "Manage extensions".</li>
+<li>Click "Details" underneath and ensure "Allow in Incognito" is enabled.</li>
+<li>Click "Extension options".</li>
+<li>In the "Advanced Settings" tab, enable "Enable mixed content rulesets".</li>
+<li>Click the puzzle piece in the top right of the browser again and click "HTTPS Everywhere".</li>
+<li>Enable "Encrypt All Sites Eligible is ON".</li>
+<li>Restart the browser.</li>
+</ol>
+<h3>
+❓ Extensions Not Listed
+</h3>
+<ol>
+<li>Find your desired extension on the <a href="https://chrome.google.com/webstore">Chrome Web Store</a>.</li>
+<li>Copy the string at the end of the URL in the address bar (e.g. for uBlock Origin, the URL is <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm</a>, therefore the required string is "cjpalhdlnbpafiamejdnhcphjbkeiagm").</li>
+<li>Paste the text into a text editor (e.g. Notepad on Windows or TextEdit on macOS).</li>
+<li>Copy the following link: <a href="https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3D{INSERT STRING HERE}%26installsource%3Dondeman%26uc">https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=92.0.4515.107&x=id%3D{INSERT STRING HERE}%26installsource%3Dondeman%26uc</a> and paste it also into the text editor.</li>
+<li>Replace "{INSERT STRING HERE} with the string that you had copied from the <a href="https://chrome.google.com/webstore">Chrome Web Store</a> link.</li>
+<li>Paste the entire newly created link into the address bar of the browser to install.</li>
+</ol>
+
+<br>
+
+<br>
+<hr style="width:475px" color="FF00FF">
+<br>
+
+<h2>
+📤 Updating Chromium & Extensions
+</h2>
+<h3>
+🔵 Chromium
+</h3>
+<ol>
+<li>Visit <a href="https://chromium.woolyss.com">this</a> link and find the newest version with the purple "Ungoogled" tag for your operating system.</li>
+<li>Install the new Chromium version over the existing installation as above.</li>
+</ol>
+<h3>
+🧩 Extensions
+</h3>
+<ol>
+<li>Visit the link to the extension from above if applicable or the one you had created previously if a custom extension.</li>
+<li>Install the new version over the existing installation.</li>
+</ol>
+<br>
+
+<strong>Last Edited:</strong> 18th July 2021
+
+<hr color="FF00FF">
+
+
+<center>
+<nav>
+<a href="../index.html">Home</a>
+</nav>
+</center>
+
+</body>
+
+</html>
