@@ -1,0 +1,44 @@
+  body {
+  background-color: #000000;
+  color: #FFFFFF;
+	font-size: 20;
+  }
+
+  h1 {
+	color: #7FFFD4;
+	font-size: 18;
+  }
+  
+  p {
+  max-width: 700px;
+	font-size: 16;
+  color: #DC143C;
+	font-weight: bold;
+  }
+
+  p2 {
+    font-size: 22;
+    }
+
+  a {
+  font-size: 12;
+  color: #FFFF00;
+	text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    max-width: 550px;
+    border: 2px solid #FF00FF;
+  }
+
+  .blink {
+  animation: blink 3.5s linear infinite;
+  }
+  @keyframes blink {  
+  25% { opacity: 0; } 
+  50% { opacity: 100; }
+  }
