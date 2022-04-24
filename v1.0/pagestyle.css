@@ -1,0 +1,88 @@
+  body {
+	background-image: url("./imgs/paper.webp");
+	background-repeat: repeat-x repeat-y;
+    color: #FFFFFF;
+	font-size: 12;
+  }
+
+  h1 {
+	color: #7FFFD4;
+	max-width: 950px;
+	font-size: 30;
+  }
+
+  h2 {
+	color: #7FFFD4;
+	margin-left: 25px;
+	font-size: 22;
+  }
+  
+  h3 {
+    color: #FFFFFF;
+	margin-left: 75px;
+	margin-right: 75px;
+	font-size: 18;
+	font-weight: bold;
+  }
+
+  nav {
+	font-size: 20;
+	font-weight: bold;
+  }
+
+  a {
+    color: #7FFFD4;
+	text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+table.vibe {
+	border-style: double;
+	border-width: 5px;
+	border-color: #FF00FF;
+	margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    max-width: 950px;
+}
+
+  ul {
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 14;
+  }
+
+  ol {
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 14;
+  }
+
+  p {
+	margin-left: 75px;
+	margin-right: 75px;
+	font-size: 16;
+  }
+
+code {
+	background: #222 ;
+	color: #FFFF00 ;
+	overflow-wrap: break-word ;
+	margin-left: 75px;
+	margin-right: 75px;
+	color: #FFFF00 ;
+}
+
+  .blink {
+  animation: blink 3.5s linear infinite;
+    color: #DC143C;
+	font-weight: bold;
+	font-size: 18;
+  }
+  @keyframes blink {  
+  25% { opacity: 0; } 
+  50% { opacity: 100; }
+  }
